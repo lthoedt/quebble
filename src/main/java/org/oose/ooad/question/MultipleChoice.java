@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 public class MultipleChoice extends Question {
     private ArrayList<Field> fields;
 
-    public MultipleChoice(String question, Category category, ArrayList<Field> fields) {
-        super(question, category);
+    public MultipleChoice(String question, Category category, char letter, ArrayList<Field> fields) {
+        super(question, category, letter);
         this.fields = fields;
     }
 
@@ -18,9 +18,8 @@ public class MultipleChoice extends Question {
 
     @Override
     public boolean compareAnswer(String ans) {
-        ans = ans.toUpperCase();
         for ( Field field : this.getCorrectFields() ) {
-            if ( ans.equals(field.getKey()) )
+            if ( ans.toLowerCase().equals(field.getKey().toLowerCase()) )
                 return true;
         }
 

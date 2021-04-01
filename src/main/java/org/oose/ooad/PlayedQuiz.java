@@ -47,7 +47,7 @@ public class PlayedQuiz {
 
         if ( answerIsCorrect ) {
             // voeg een letter toe
-            this.word.addLetter( ans.charAt(0) );
+            this.word.addLetter( this.quiz.getCurrentQuestion().getLetter() );
         }
 
         return answerIsCorrect;
