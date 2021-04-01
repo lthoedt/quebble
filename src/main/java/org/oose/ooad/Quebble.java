@@ -57,7 +57,7 @@ public class Quebble
                     } catch ( IndexOutOfBoundsException e ) {
 
                         // EXIT
-                        game.prompt = "Woord: ";
+                        game.prompt = "Maak een engels woord: ";
                         game.setState(STATE_END_GAME);
                     }
                     break;
