@@ -4,8 +4,11 @@ public class CalculateWithoutTime implements IScoreCalculator {
 
     @Override
     public int calculateScore(int correctAnswers, String createdWord, int time) {
-        // TODO Auto-generated method stub
-        return 0;
+        int score = 0;
+        score += correctAnswers * 10;
+        score += createdWord.length() * 15;
+
+        return score;
     }
     
 }

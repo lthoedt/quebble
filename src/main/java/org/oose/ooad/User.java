@@ -21,7 +21,11 @@ public class User {
         return this.pq.answerQuestion(ans);
     }
 
-    public boolean makeWord(String word) {
+    public int makeWord(String word) {
         return this.pq.makeWord(word);
+    }
+
+    public String getNextQuestion() throws IndexOutOfBoundsException {
+        return this.pq.getNextQuestion();
     }
 }

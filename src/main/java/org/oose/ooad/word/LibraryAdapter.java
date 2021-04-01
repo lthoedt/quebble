@@ -1,11 +1,14 @@
 package org.oose.ooad.word;
 
+import me.shib.java.lib.diction.*;
+
 public class LibraryAdapter implements IWordControllerAdapter {
+
+    private DictionService ds = new DictionService();
 
     @Override
     public boolean checkWord(String w) {
-        // TODO Auto-generated method stub
-        return false;
+        return this.ds.getDictionWord(w) != null;
     }
     
 }

@@ -8,6 +8,10 @@ public class GivenAnswer {
         this.value = value;
     }
 
+    public boolean getCorrect() {
+        return this.correct;
+    }
+
     public void setCorrect( boolean correct ) {
         this.correct = correct;
     }

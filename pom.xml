@@ -31,6 +31,11 @@
       <version>8.0</version>
       <scope>provided</scope>
     </dependency> 
+    <dependency>
+      <groupId>me.shib.java.lib</groupId>
+      <artifactId>diction</artifactId>
+      <version>0.1.1</version>
+    </dependency>
   </dependencies>
 
   <build>
